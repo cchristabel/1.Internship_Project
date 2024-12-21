@@ -1,0 +1,55 @@
+Id,ProductName,Amount,Description,ProductType
+101,Office Chair,1000,Ergonomic chair with lumbar support,Furniture
+102,Standing Desk,300,Adjustable height standing desk,Furniture
+103,Monitor Stand,500,Adjustable monitor stand with storage,Furniture
+104,Desk Organizer,250,Multi-compartment desk organizer,Accessories
+105,Laptop Stand,350,Portable aluminum laptop stand,Accessories
+106,Wireless Keyboard,45,Slim wireless Bluetooth keyboard,Electronics
+107,Wireless Mouse,150,Ergonomic wireless mouse,Electronics
+108,Noise Cancelling Headphones,1300,Over-ear noise-cancelling headphones,Electronics
+109,Webcam,100,1080p HD webcam with built-in microphone,Electronics
+110,USB Hub,50,4-port USB 3.0 hub,Electronics
+111,Conference Speakerphone,400,USB speakerphone for conference calls,Electronics
+112,Desk Lamp,200,LED desk lamp with adjustable brightness,Furniture
+113,Cable Organizer,150,Silicone cable management clips,Accessories
+114,Whiteboard,300,Magnetic dry erase whiteboard,Furniture
+115,Whiteboard Markers,100,Set of 12 colored dry-erase markers,Stationery
+116,Post-it Notes,50,Pack of 3x3-inch sticky notes,Stationery
+117,Printer Paper,50,500-sheet pack of A4 printer paper,Stationery
+118,File Folders,120,Set of 10 multi-color file folders,Stationery
+119,Pen Holder,100,Mesh pen holder for desk,Accessories
+120,Stapler,150,Heavy-duty stapler with 1000 staples,Stationery
+121,Paper Shredder,110,Cross-cut paper shredder for security,Electronics
+122,Desk Calendar,120,Monthly desk calendar with tear-off pages,Stationery
+123,Bulletin Board,305,Cork bulletin board with push pins,Furniture
+124,Clipboard,80,Standard letter-size clipboard,Accessories
+125,Business Card Holder,90,Metal business card holder for desk,Accessories
+126,Label Maker,100,Handheld label maker with tape,Electronics
+127,Desk Mat,250,Leather desk pad protector,Accessories
+128,Bookends,180,Heavy-duty bookends for shelf organization,Accessories
+129,Filing Cabinet,700,3-drawer metal filing cabinet with lock,Furniture
+130,Printer,1500,Wireless all-in-one color inkjet printer,Electronics
+131,Office Phone,800,Corded office telephone with caller ID,Electronics
+132,Clipboard Storage Box,205,Storage clipboard with compartments,Accessories
+133,Desk Partition,180,Privacy desk partition panel,Furniture
+134,Floor Mat,500,Office chair floor mat for carpet protection,Furniture
+135,Coat Rack,45,Standing coat rack with umbrella holder,Furniture
+136,Document Scanner,250,High-speed document scanner,Electronics
+137,Surge Protector,30,6-outlet power strip with surge protection,Electronics
+138,Trash Can,20,Mesh trash can for office,Accessories
+139,Paper Clips,50,Pack of 200 jumbo paper clips,Stationery
+140,Binder Clips,60,Set of 24 assorted binder clips,Stationery
+141,Office Chair Cushion,35,Memory foam seat cushion,Furniture
+142,Mouse Pad,100,Non-slip mouse pad with wrist support,Accessories
+143,Monitor,220,24-inch Full HD computer monitor,Electronics
+144,Planner,15,Weekly/monthly planner with hardcover,Stationery
+145,Pen Set,12,Pack of 10 gel pens in assorted colors,Stationery
+146,Sticky Flags,60,Pack of colored sticky flags for organization,Stationery
+147,Phone Stand,200,Adjustable phone holder for desk,Accessories
+148,Presentation Remote,250,Wireless presentation clicker with laser pointer,Electronics
+149,Coffee Maker,500,Single-serve coffee maker with pods,Appliance
+150,Water Dispenser,120,Hot and cold water dispenser,Appliance
+149,Coffee Maker,500,Single-serve coffee maker with pods,Appliance
+150,Water Dispenser,120,Hot and cold water dispenser,Appliance
+122,Desk Calendar,120,Monthly desk calendar with tear-off pages,Stationery
+151,Water papers,120,Hot and cold water papers,Appliance

@@ -1,0 +1,276 @@
+{
+  "Users": [
+    {
+      "FirstName": "Andreas",
+      "LastName": "Alderud",
+      "Email": "andreas@acmecorp.com",
+      "Password": "andreas",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "boardmember"
+        },
+        {
+          "Type": "Board Title",
+          "Value": "CEO"
+        }
+      ]
+    },
+    {
+      "FirstName": "Federico",
+      "LastName": "Binda",
+      "Email": "federico@acmecorp.com",
+      "Password": "federico",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "boardmember"
+        },
+        {
+          "Type": "Board Title",
+          "Value": "CFO"
+        }
+      ]
+    },
+    {
+      "FirstName": "Alberto",
+      "LastName": "Pietrini",
+      "Email": "alberto@acmecorp.com",
+      "Password": "alberto",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "boardmember"
+        },
+        {
+          "Type": "Board Title",
+          "Value": "CIO"
+        }
+      ]
+    },
+    {
+      "FirstName": "Mira",
+      "LastName": "Skog",
+      "Email": "mira@acmecorp.com",
+      "Password": "mira",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "administrator"
+        },
+        {
+          "Type": "Department",
+          "Value": "IT"
+        }
+      ]
+    },
+    {
+      "FirstName": "Christabel",
+      "LastName": "Danquah",
+      "Email": "christabel@acmecorp.com",
+      "Password": "christabel",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "manager"
+        },
+        {
+          "Type": "Department",
+          "Value": "Marketing"
+        }
+      ]
+    },
+    {
+      "FirstName": "Indira",
+      "LastName": "Mallu",
+      "Email": "indira@acmecorp.com",
+      "Password": "indira",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "manager"
+        },
+        {
+          "Type": "Department",
+          "Value": "HR"
+        }
+      ]
+    },
+    {
+      "FirstName": "Viktor",
+      "LastName": "Springe",
+      "Email": "viktor@acmecorp.com",
+      "Password": "viktor",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "manager"
+        },
+        {
+          "Type": "Department",
+          "Value": "Engineering"
+        }
+      ]
+    },
+    {
+      "FirstName": "West",
+      "LastName": "South",
+      "Email": "west@acmecorp.com",
+      "Password": "west",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "manager"
+        },
+        {
+          "Type": "Department",
+          "Value": "Finance"
+        }
+      ]
+    },
+    {
+      "FirstName": "James",
+      "LastName": "Gordon",
+      "Email": "james@acmecorp.com",
+      "Password": "james",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "employee"
+        },
+        {
+          "Type": "Department",
+          "Value": "Engineering"
+        }
+      ]
+    },
+    {
+      "FirstName": "Sam",
+      "LastName": "Joe",
+      "Email": "sam@acmecorp.com",
+      "Password": "sam",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "employee"
+        },
+        {
+          "Type": "Department",
+          "Value": "Finance"
+        }
+      ]
+    },
+    {
+      "FirstName": "Alice",
+      "LastName": "Mansa",
+      "Email": "alice@acmecorp.com",
+      "Password": "alice",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "employee"
+        },
+        {
+          "Type": "Department",
+          "Value": "HR"
+        }
+      ]
+    },
+    {
+      "FirstName": "Dave",
+      "LastName": "Martin",
+      "Email": "dave@acmecorp.com",
+      "Password": "dave",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "employee"
+        },
+        {
+          "Type": "Department",
+          "Value": "Marketing"
+        }
+      ]
+    },
+    {
+      "FirstName": "Emily",
+      "LastName": "Chantya",
+      "Email": "emily@acmecorp.com",
+      "Password": "emily",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "employee"
+        },
+        {
+          "Type": "Department",
+          "Value": "Finance"
+        },
+        {
+          "Type": "Board Title",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "FirstName": "Liam",
+      "LastName": "Svensson",
+      "Email": "liam@acmecorp.com",
+      "Password": "liam",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "employee"
+        },
+        {
+          "Type": "Department",
+          "Value": "HR"
+        },
+        {
+          "Type": "Board Title",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "FirstName": "Ava",
+      "LastName": "Williams",
+      "Email": "ava@acmecorp.com",
+      "Password": "ava",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "employee"
+        },
+        {
+          "Type": "Department",
+          "Value": "Marketing"
+        },
+        {
+          "Type": "Board Title",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "FirstName": "Mia",
+      "LastName": "Priya",
+      "Email": "mia@acmecorp.com",
+      "Password": "mia",
+      "Claims": [
+        {
+          "Type": "role",
+          "Value": "manager"
+        },
+        {
+          "Type": "Department",
+          "Value": "Finance"
+        },
+        {
+          "Type": "Board Title",
+          "Value": ""
+        }
+      ]
+    }
+  ]
+}

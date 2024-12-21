@@ -1,0 +1,39 @@
+@* @model PurchaseOrder *@
+@model SecureMVCApp.Models.PurchaseOrder
+@{
+    ViewData["Title"] = "Edit PO";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Edit Purchase Order</h1>
+</div>
+
+<div>
+    
+    <form method="post">
+
+        @* <field for="Description">Description</field>
+        <input name="Description" value="@Model.Description"/>
+        <field for="Amount">Amount </field>
+        <input name="Amount" value="@Model.Amount"/>
+        
+        <button type="submit">Update</button>
+    </form>
+    <br/>
+    
+</div> *@
+
+    <div>
+        <label for="Description">Description</label>
+        <input id="Description" name="Description" value="@Model.Description" required />
+    </div>
+    <div>
+        <label for="Amount">Amount</label>
+        <input id="Amount" name="Amount" type="number" value="@Model.Amount" required />
+    </div>
+        <button type="submit">Update</button>
+    </form>
+    <br/>
+</div>
+
+

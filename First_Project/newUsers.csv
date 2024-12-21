@@ -1,0 +1,9 @@
+FirstName,LastName,Email,Password,role,Department,BoardTitle
+Emily,Chantya,emily@acmecorp.com,emily,employee,Finance,
+Liam,Svensson,liam@acmecorp.com,liam,employee,HR,
+Ava,Williams,ava@acmecorp.com,ava,employee,Marketing,
+Mia,Priya,mia@acmecorp.com,mia,manager,Finance,
+Dave,Martin,dave@acmecorp.com,dave,employee,HR,
+Emily,Chantya,emily@acmecorp.com,emily,employee,Finance,
+Shula,Dasen,shula@acmecorp.com,12345,employee,Finance,
+

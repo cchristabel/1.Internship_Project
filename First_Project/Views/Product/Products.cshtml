@@ -1,0 +1,55 @@
+@* @model IEnumerable<Products> *@
+@model IEnumerable<SecureMVCApp.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h1>Product List</h1>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <strong>Error!</strong>
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+<!-- File Upload Form -->
+<form asp-action="Upload" method="post" enctype="multipart/form-data">
+    <div>
+        <label for="fileUpload">Upload CSV File:</label>
+        <input type="file" id="fileUpload" name="fileUpload" accept=".csv" />
+        <button type="submit">Upload</button>
+    </div>
+    
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Amount</th>
+            <th>Description</th>
+            <th>Product Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.ProductName</td>
+                <td>@product.Amount</td>
+                <td>@product.Description</td>
+                <td>@product.ProductType</td>
+            </tr>
+        }
+    </tbody>
+</table>

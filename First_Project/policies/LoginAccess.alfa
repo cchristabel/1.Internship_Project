@@ -1,0 +1,79 @@
+namespace AcmeCorp.LoginAccess 
+{
+    import Oasis.Attributes
+    import AcmeCorp.Advice
+    import Oasis.Functions
+    import Enforcer.Functions
+
+    attribute CurrentDay
+    { 
+        id = "CurrentDay" 
+        category = environmentCat
+        type = string
+    }
+
+    
+    attribute currentTime
+    { 
+        id = "CurrentTime" 
+        category = environmentCat
+        type = time
+    }
+    
+
+
+
+    policy AccessPolicy 
+    {
+        target clause ResourceType == "Login"
+        apply firstApplicable
+
+        // Employee access: Monday to Friday, 8:00 - 17:00
+        rule employeeAccess 
+        {
+            deny
+            condition not 
+            (
+                (Subject.Role == "employee") and
+                (CurrentDay >= "Monday" and CurrentDay <= "Friday") and
+                (currentTime >= "08:00:00":time) and 
+                (currentTime < "10:00:00":time)
+            )
+
+            on deny
+            {
+                advice AuthorizationFailure
+                {
+                    AuthorizeFailureMessage = "You are not allowed to log in. Try again another time!"
+                }
+            }
+        }
+
+        // Manager access: Monday to Friday, 24/7
+        rule managerAccess 
+        {
+            deny
+            condition not
+            (
+                (Subject.Role == "manager") and
+                (CurrentDay >= "Monday" and CurrentDay <= "Friday")
+            )
+        }
+
+        // Board member access: 24/7, every day
+        rule boardMemberAccess 
+        {
+            deny
+            condition not
+            (
+                (Subject.Role == "boardmember")
+            )
+        }
+
+        // Deny all others
+        rule denyEveryoneElse 
+        {
+            deny
+        }
+    }
+}

@@ -1,0 +1,133 @@
+namespace AcmeCorp.Finance
+{
+    import Oasis.Attributes
+    import AcmeCorp.Advice
+    import Oasis.Functions
+    import Enforcer.Functions
+ 
+    attribute PurchaseOrderTotal
+    {
+        id = "PurchaseOrderTotal"
+        category = actionCat
+        type = double
+    }
+
+    attribute PurchaseOrderAmount
+    {
+        id = "PurchaseOrderAmount"
+        category = actionCat
+        type = double
+    }
+ 
+    attribute PurchaseOrderLimit
+    {
+        id = "MaxPurchaseOrderValue"
+        category = resourceCat
+        type = double
+    }  
+ 
+    attribute PurchaseOrderRole
+    {
+        id = "PurchaseOrderRole"
+        category = resourceCat
+        type = string
+    }
+
+    attribute PurchaseOrderDepartment
+    {
+        id = "PurchaseOrderDepartment"
+        category = resourceCat
+        type = string
+    }
+ 
+    policy PurchaseOrders
+    {
+        target clause ResourceType == 'PurchaseOrder'
+        apply permitUnlessDeny
+ 
+        
+        rule RestrictCreation
+        {
+            target clause Action == 'CreatePurchaseOrder' 
+            deny
+            condition not
+            (
+                (Subject.Role == 'manager' and PurchaseOrderTotal <= PurchaseOrderLimit) or
+                (Subject.Role == 'boardmember' and PurchaseOrderTotal <= PurchaseOrderLimit) or
+                (Subject.Role == 'employee' and PurchaseOrderTotal <= PurchaseOrderLimit) or 
+                (Subject.Role == 'administrator' and PurchaseOrderTotal <= PurchaseOrderLimit)
+            )
+ 
+            on deny
+            {
+                advice AuthorizationFailure
+                {
+                    AuthorizeFailureMessage = "Your purchase order $" + ToString(PurchaseOrderTotal) + " crossed the limit $" + ToString(PurchaseOrderLimit) + ", consult your department."
+                }
+            }
+        }
+
+        // Restrict Edit/Update Actions
+        rule RestrictEdit
+        
+        {
+            target clause Action == 'Edit' || Action == 'Update'
+            deny
+            condition not
+            (
+                (
+                (Subject.Role == 'manager' or Subject.Role == 'boardmember' or Subject.Role == 'administrator') and
+                (PurchaseOrderTotal <= PurchaseOrderLimit))
+            )
+            on deny
+            {
+                advice AuthorizationFailure
+                {
+                    AuthorizeFailureMessage = ("Your order " + ToString(PurchaseOrderTotal) + " , Managers and Board Members can only edit or update" + ", consult your department.")
+                }
+            }
+        }
+
+        rule Upload
+        {
+            target clause Action == 'Upload' // Action type for CSV upload
+            deny
+            condition not
+            (
+                Subject.Role == 'administrator' // Only administrator can upload CSV
+            )
+            on deny
+            {
+                advice AuthorizationFailure
+                {
+                    AuthorizeFailureMessage = "Only administrators are allowed to upload CSV files."
+                }
+            }
+        }
+
+ 
+    }
+
+    // policy Product
+    // {
+    //     target clause ResourceType == 'Product'
+    //     apply permitUnlessDeny
+    //     // Rule for CSV Upload
+    //     rule Upload
+    //     {
+    //         target clause Action == 'Upload' // Define the action type for CSV upload
+    //         deny
+    //         condition not
+    //         (
+    //             Subject.Role == 'administrator' // Only administrator can upload CSV
+    //         )
+    //         on deny
+    //         {
+    //             advice AuthorizationFailure
+    //             {
+    //                 AuthorizeFailureMessage = "Only administrators are allowed to upload CSV files."
+    //             }
+    //         }
+    //     }
+    // }
+}
