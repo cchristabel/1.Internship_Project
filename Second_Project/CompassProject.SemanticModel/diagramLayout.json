@@ -1,0 +1,165 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 308.64395924531823,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 647.29195031278516,
+            "y": 293.14129462569036
+          },
+          "nodeIndex": "Concepts",
+          "nodeLineageTag": "2276878f-b2f0-42be-aa99-ef132145de6b",
+          "size": {
+            "height": 211,
+            "width": 241
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 862.5118861102045,
+            "y": 773.63459818391368
+          },
+          "nodeIndex": "Contexts",
+          "nodeLineageTag": "805c02c9-95f9-4c78-ac6e-58e8e682fc50",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1247.9212192574432,
+            "y": 439.87066126992795
+          },
+          "nodeIndex": "Facts",
+          "nodeLineageTag": "95d5a682-ffe2-4384-8bf7-315eeb157bae",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1268.3998325150064,
+            "y": 810.36655966236526
+          },
+          "nodeIndex": "Reports",
+          "nodeLineageTag": "2484674c-3ddd-4fe6-bf5a-a5d418997503",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 2330.5971539382963,
+            "y": 327.054659595078
+          },
+          "nodeIndex": "Units",
+          "nodeLineageTag": "e08ab443-1405-4f3d-bdb6-17208feb2c42",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1105.3439452882353,
+            "y": 12.804045779231558
+          },
+          "nodeIndex": "GenericDimensionElements",
+          "nodeLineageTag": "a10f1cc7-55e0-4889-88c3-b1088633d73b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1480.8278877850546,
+            "y": 0
+          },
+          "nodeIndex": "ExplicitDimensionInfos",
+          "nodeLineageTag": "10419b0e-c623-464b-af6a-a849ec4566a5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 688.038741662725,
+            "y": 21.139997208583445
+          },
+          "nodeIndex": "TypedDimensionInfos",
+          "nodeLineageTag": "40d1b59a-7616-4f7d-8470-541b5160f212",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 2328.0944893186679,
+            "y": 133.8520089325329
+          },
+          "nodeIndex": "Base Query",
+          "nodeLineageTag": "95f25af6-2c8a-4a55-968b-ad85186259c2",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 541.78409602472948,
+            "y": 963.907896159304
+          },
+          "nodeIndex": "LabelLinks",
+          "nodeLineageTag": "d47ec3cd-f66a-40be-aaa9-189520933124",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 465.07993858883572,
+            "y": 644.67327006122457
+          },
+          "nodeIndex": "LinkbaseResources",
+          "nodeLineageTag": "22c30c49-5428-4ab5-b6ef-9e83e67a3b03",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 10
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 70.955543900968792,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
